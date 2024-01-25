@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="buttonsGame.MainPage"
+             x:Name="test">
+
+    <ScrollView x:Name="main">
+        <VerticalStackLayout>
+            <StackLayout x:Name="start">
+                <Label>podaj rozmiar:</Label>
+                <Entry x:Name="SizeInput"></Entry>
+                <Label x:Name="errormessage" IsVisible="false">rozmiar musi byc nieparzysty, nie mniejszy niz 3</Label>
+                <Button Text="graj" Clicked="Play"/>
+            </StackLayout>
+            <Grid x:Name="game">
+            
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
